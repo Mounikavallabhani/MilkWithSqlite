@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                     android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/productimage"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/productname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp" />
+
+                    <TextView
+                        android:id="@+id/productml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp" />
+
+                    <TextView
+                            android:id="@+id/productcost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                 
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+
+               android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="#c2c1c1" />
+        </LinearLayout>
+
+
+</LinearLayout>
