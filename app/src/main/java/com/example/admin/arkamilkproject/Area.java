@@ -4,20 +4,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
-public class Login extends AppCompatActivity {
-    TextView signup;
-
+public class Area extends AppCompatActivity {
+    Button area;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        signup=(TextView)findViewById(R.id.Signup);
-        signup.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_area);
+        area=(Button)findViewById(R.id.area);
+        area.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Login.this,Registration.class);
+                Intent intent=new Intent(Area.this,Login.class);
                 startActivity(intent);
             }
         });

@@ -5,50 +5,55 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#fff">
-
     <ImageView
         android:layout_marginTop="10dp"
         android:layout_width="200dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:src="@drawable/maillogo" />
-
-    <android.support.v4.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="2dp" />
-
     <EditText
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       android:hint="Username"
-       />
+        android:hint="Username"
+        />
     <EditText
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Id"
+        />
+    <EditText
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-       />
-    <android.support.v4.widget.Space
+        />
+    <EditText
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
-        android:layout_height="2dp" />
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        />
     <Button
         android:textColor="#fff"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:background="@drawable/button_background"
+        android:background="@drawable/rbackground"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Login"/>
-    <android.support.v4.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="2dp" />
+        android:text="Registraion"/>
 
-    <android.support.v4.widget.Space
-        android:layout_width="match_parent"
-        android:layout_height="3dp" />
     <LinearLayout
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
@@ -62,20 +67,18 @@
             android:textStyle="bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Don't have an account?"/>
+            android:text=" Have an account?"/>
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign Up"
+            android:text="Log In"
             android:textColor="#BE5F75"
             android:layout_marginTop="7dp"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:id="@+id/Signup"/>
+            android:id="@+id/login"/>
 
     </LinearLayout>
-
 
 
 </LinearLayout>
