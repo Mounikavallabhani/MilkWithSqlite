@@ -16,7 +16,7 @@ public class Area extends AppCompatActivity {
         area.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Area.this,Login.class);
+                Intent intent=new Intent(Area.this, com.example.admin.arkamilkproject.Login.class);
                 startActivity(intent);
             }
         });

@@ -1,10 +1,13 @@
-package com.example.admin.arkamilkproject;
+package com.example.admin.arkamilkproject.app;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.admin.arkamilkproject.R;
+import com.example.admin.arkamilkproject.Registration;
 
 public class Login extends AppCompatActivity {
     TextView signup;
