@@ -25,7 +25,7 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Toast.makeText(this, "haii", Toast.LENGTH_SHORT).show();
+
 
     }
 }

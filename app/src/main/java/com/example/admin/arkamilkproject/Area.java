@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.admin.arkamilkproject.app.Login;
 
@@ -22,6 +23,7 @@ public class Area extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Toast.makeText(this, "haii", Toast.LENGTH_SHORT).show();
 
     }
 }
