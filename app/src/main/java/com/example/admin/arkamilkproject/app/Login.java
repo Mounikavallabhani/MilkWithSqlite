@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.admin.arkamilkproject.R;
 import com.example.admin.arkamilkproject.Registration;
@@ -24,6 +25,7 @@ public class Login extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Toast.makeText(this, "haii", Toast.LENGTH_SHORT).show();
 
     }
 }

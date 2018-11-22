@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.admin.arkamilkproject.app.Login;
+
 public class Area extends AppCompatActivity {
     Button area;
     @Override
@@ -16,7 +18,7 @@ public class Area extends AppCompatActivity {
         area.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Area.this, com.example.admin.arkamilkproject.Login.class);
+                Intent intent=new Intent(Area.this, Login.class);
                 startActivity(intent);
             }
         });
