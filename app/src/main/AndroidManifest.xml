@@ -2,6 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.admin.arkamilkproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,17 +16,89 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".app.DashBoard"
+            android:label="Milk">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".app.ProductActivity" />
+        <activity android:name=".app.Area"></activity>
+        <activity android:name=".app.Registration" />
+        <activity android:name=".app.Login" >
+
+        </activity>
+
+        <activity android:name=".app.DeliveryOnce" />
+        <activity android:name=".app.Subscription" >
+
+        </activity>
+        <activity android:name=".app.ProductDescriptionActivity" >
+
+        </activity>
+
+        <activity android:name=".app.Brands" />
+        <activity android:name=".app.CheckOut" />
+        <activity android:name=".app.OrderHestory" />
+        <activity android:name=".app.OrderHistroyViewDetails" />
+        <activity android:name=".app.CustomerActivity" >
+
+        </activity>
+        <activity android:name=".app.Settings" >
+
+
+        </activity>
+        <activity android:name=".app.CurdActivity" />
+        <activity android:name=".app.CardItemsList" />
+        <activity android:name=".app.Bekary" />
+        <activity android:name=".app.PoojaItems" />
+        <activity android:name=".app.ApplyCoupin" >
+
+        </activity>
+        <activity android:name=".app.SplashActivity"></activity>
+        <activity android:name=".app.WelcomeActivity"></activity>
+        <activity android:name=".app.Maps"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity android:name=".app.ForgetPassword"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <!--<meta-data-->
+            <!--android:name="com.google.android.geo.API_KEY"-->
+            <!--android:value="@string/google_maps_key" />-->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
-            android:name=".Login"
-            android:label="@string/title_activity_login"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".app.MapsActivity2"
+            android:label="@string/title_activity_maps">
+
+        </activity>
+        <activity android:name=".app.OtpActivity">
+
+
+
+        </activity>
+
+
     </application>
 
 </manifest>

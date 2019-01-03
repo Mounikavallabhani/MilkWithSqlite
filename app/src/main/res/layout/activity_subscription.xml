@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:fontFamily="@font/six"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:gravity="center|end"
+            android:layout_marginRight="20dp"
+            android:text="From date :"
+            android:textSize="20dp" />
+        <LinearLayout
+            android:id="@+id/startdate"
+            android:background="@drawable/textshape"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/startdatetext"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cal16"
+                android:drawablePadding="10dp"
+                android:hint="DD-MM-YYYY"
+                android:fontFamily="@font/six"
+                android:paddingLeft="20dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:fontFamily="@font/six"
+            android:layout_marginTop="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.4"
+            android:text="To date :"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:id="@+id/enddate"
+            android:background="@drawable/textshape"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/enddatetext"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cal16"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/six"
+                android:hint="DD-MM-YYYY"
+                android:paddingLeft="20dp"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <CheckBox
+
+        android:id="@+id/everyday"
+        android:textSize="15dp"
+        android:fontFamily="@font/six"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EveryDay"/>
+    <CheckBox
+        android:id="@+id/alternativeday"
+        android:textSize="15dp"
+      android:fontFamily="@font/six"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alternative Day"/>
+    <!--<ListView-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/list"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_height="200dp">-->
+
+    <!--</ListView>-->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_above="@id/confirmsbs"
+            android:background="@drawable/layoutshape"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview"
+                android:gravity="center"
+                android:textSize="14dp"
+                android:fontFamily="@font/six"
+                android:textColor="#009dfc"
+                android:text="APPLY COUPON"/>
+        </LinearLayout>
+
+        <Button
+            android:textSize="15dp"
+             android:layout_marginTop="18dp"
+            android:fontFamily="@font/six"
+            android:background="#207F12"
+            android:id="@+id/confirmsbs"
+            android:layout_alignParentBottom="true"
+            android:textColor="#fff"
+
+            android:text="Confirm subscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

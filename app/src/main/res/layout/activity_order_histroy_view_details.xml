@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:orientation="vertical"
+    tools:context=".app.OrderHistroyViewDetails">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:src="@drawable/productgift"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="9"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textColor="#f9444444"
+                    android:text="Thanks you for your order :"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:paddingTop="3dp"
+                    android:text="your order code : b140-jnk"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="3dp"
+                    android:textSize="14dp"
+                    android:text="Mode of payment :Online payment"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Heritage milk packet :"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="* 1"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:textColor="#f9444444"
+                        android:text="100"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#3cbfbdbd"
+                    android:layout_height="2dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="match_parent"
+                        android:textSize="14dp"
+                        android:textColor="#f9444444"
+                        android:text="Subtotal before discount :"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:textColor="#f9444444"
+                        android:text="100"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#3cbfbdbd"
+                    android:layout_height="0.8dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Discount :"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+
+                        android:text="100"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#3cbfbdbd"
+                    android:layout_height="0.8dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text="Subtotal :"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+
+                        android:text="300"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#3cbfbdbd"
+                    android:layout_height="0.8dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingTop="15dp"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="7"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textColor="#f9444444"
+                        android:text="Total :"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="3"
+                        android:textColor="#f9444444"
+                        android:text="400.00"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#3cbfbdbd"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:src="@drawable/hand"
+                android:gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+
+                android:textColor="#f9444444"
+                android:text="Delivery Address"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="plot-152 phase -1 Mythri Nagar alwin cross road \n back side lane sai services    \n Madinaguda , Hafeezpet \n Hyderabad "/>
+
+
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,48 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/arealayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="10"
     android:background="#fff">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:layout_weight="4">
     <ImageView
         android:layout_marginTop="10dp"
         android:layout_width="200dp"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:layout_gravity="center"
         android:src="@drawable/maillogo" />
+   </LinearLayout>
     <android.support.v4.widget.Space
         android:layout_width="match_parent"
         android:layout_height="3dp" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
     <EditText
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:textColorHint="#000"
+       android:fontFamily="@font/six"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Mobile number"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+    <EditText
+        android:textColorHint="#000"
 
-    <!--<Spinner-->
-        <!--android:theme="@style/mySpinnerItemStyle"-->
-        <!--android:popupBackground="#fff"-->
-       <!--android:layout_marginLeft="10dp"-->
-        <!--android:singleLine="true"-->
-        <!--android:id="@+id/spinner1"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:entries="@array/SelectArea"-->
-        <!--android:layout_marginTop="20dp">-->
-    <!--</Spinner>-->
+        android:fontFamily="@font/six"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Location"/>
+
+
+        </LinearLayout>
+
+
+
+        <!--add fragment to search place-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
     <Button
+
+        android:fontFamily="@font/six"
         android:id="@+id/area"
         android:textColor="#fff"
-        android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:background="@drawable/button_background"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Login"/>
-
-
+        android:text="Next"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="2">
+    </LinearLayout>
 
 </LinearLayout>

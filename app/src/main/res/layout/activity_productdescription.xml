@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:id="@+id/descriptionlinerelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#cbfc9a"
+            card_view:cardCornerRadius="10dp"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/backbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/left24" />
+
+
+            <ImageView
+                android:id="@+id/productimage"
+                android:layout_width="224dp"
+                android:layout_height="144dp"
+                android:layout_gravity="center"
+                android:src="@drawable/milk" />
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+
+                android:fontFamily="@font/six"
+                android:text="Heritage Toned Milk"
+                android:textColor="#000"
+                android:id="@+id/pdt1"
+                android:textSize="18dp" />
+
+            <TextView
+                 android:id="@+id/pdt2"
+                android:fontFamily="@font/six"
+                android:textColor="#c6c5c5"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500ml"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+
+                android:text="25.00"
+                android:id="@+id/pdt3"
+                android:textColor="#009DFC"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="170dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/incrementshape"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="0dp"
+                    android:textColor="@android:color/black"
+                    android:background="@null"
+                    android:id="@+id/decrease"
+                    android:textStyle="bold"
+                    android:text="—"/>
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="1"
+                    android:textColor="@android:color/black"
+                    android:inputType="number"
+                    android:id="@+id/add"
+                    android:gravity="center"
+                    />
+                <Button
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:padding="0dp"
+                    android:textColor="@android:color/black"
+                    android:background="@null"
+                    android:id="@+id/increase"
+                    android:textStyle="bold"
+                    android:text="+"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="7dp"
+            android:background="#f1efef" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/six"
+            android:lineSpacingExtra="7dp"
+            android:id="@+id/t4"
+            android:text="@string/text"
+            android:textSize="13dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+
+                    android:id="@+id/subscribe"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+
+                    android:layout_weight="1"
+                    android:background="#207F12"
+                    android:fontFamily="@font/six"
+                    android:text="Subscribe"
+                    android:textColor="#fff" />
+
+                <android.support.v4.widget.Space
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="0.01" />
+
+                <Button
+                    android:id="@+id/deliveryonce"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#2462CD"
+                    android:fontFamily="@font/six"
+                    android:text="Delivery Once"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

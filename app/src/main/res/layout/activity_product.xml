@@ -5,47 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context=".ProductActivity">
-    <LinearLayout
+    tools:context=".app.ProductActivity">
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ScrollView
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-            <LinearLayout
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+          <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
             <android.support.v7.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginLeft="1dp"
                 android:scrollbars="vertical"
-                android:id="@+id/recyclerview1">
+                android:id="@+id/recyclerview1"
+              >
             </android.support.v7.widget.RecyclerView>
             </LinearLayout>
-            <LinearLayout
-                android:layout_marginTop="20dp"
+            <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="10dp" />
+                <include layout="@layout/recyelerviewitems"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
-                <android.support.v7.widget.RecyclerView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                    android:scrollbars="vertical"
-                    android:id="@+id/recyclerview2">
-
-
-            </android.support.v7.widget.RecyclerView>
-            </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
-    </LinearLayout>
 
 </LinearLayout>

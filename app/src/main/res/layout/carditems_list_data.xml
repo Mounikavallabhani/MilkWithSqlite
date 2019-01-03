@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    android:background="#fff">
+
+
+    <LinearLayout
+        android:id="@+id/cardrecyclerviewonclick"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="68dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cardproductimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="2.6"
+                android:weightSum="3"
+                android:layout_marginTop="2dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/cardproductname"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="Narasimha"
+                    android:gravity="center|left"
+                    android:textSize="16dp"
+                    android:textColor="#444454"
+                    android:layout_weight="1.7"/>
+
+                <TextView
+                    android:id="@+id/cardproductml"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="500ml"
+                    android:textSize="10dp"
+                    android:textColor="#6e6c6c"
+                    android:layout_weight="1.2"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.4"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/cardproductcost"
+                    android:layout_width="match_parent"
+                    android:text="@string/Rs"
+                    android:textColor="@color/monetcolor"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/ligihtcolor"/>
+
+
+</LinearLayout>
