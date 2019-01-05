@@ -8,6 +8,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -20,13 +22,15 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class CustomAdapterMilk extends RecyclerView.Adapter<CustomAdapterMilk.ViewHolder> {
+public class CustomAdapterMilk extends RecyclerView.Adapter<CustomAdapterMilk.ViewHolder>implements Filterable {
     Context context;
     LinearLayout recyclerviewonclick;
-    ArrayList<ModelMilk> productlist;
-    public CustomAdapterMilk(Context context, ArrayList<ModelMilk> productlist) {
+     private ArrayList<ModelMilk> productlist;
+    private ArrayList<ModelMilk> mArrayList;
+    public CustomAdapterMilk(Context context, ArrayList<ModelMilk> arrayList) {
         this.context = context;
-        this.productlist = productlist;
+        this.productlist = arrayList;
+        this.mArrayList=arrayList;
 
     }
 
@@ -61,6 +65,48 @@ public class CustomAdapterMilk extends RecyclerView.Adapter<CustomAdapterMilk.Vi
     @Override
     public int getItemCount() {
         return productlist.size();
+    }
+
+    @Override
+    public Filter getFilter() {
+
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence charSequence) {
+
+                String charString = charSequence.toString();
+
+                if (charString.isEmpty()) {
+
+                    productlist = mArrayList;
+                } else {
+
+                    ArrayList<ModelMilk> filteredList = new ArrayList<>();
+
+                    for (ModelMilk modelMilk : mArrayList) {
+
+                        if (modelMilk.getProductname().toLowerCase().contains(charString) ||
+                                modelMilk.getProductcost().toLowerCase().contains(charString) ||
+                                modelMilk.getProductml().toLowerCase().contains(charString)) {
+
+                            filteredList.add(modelMilk);
+                        }
+                    }
+
+                    productlist = filteredList;
+                }
+
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = productlist;
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence charSequence, FilterResults filterResults) {
+                productlist = (ArrayList<ModelMilk>) filterResults.values;
+                notifyDataSetChanged();
+            }
+        };
     }
 
 

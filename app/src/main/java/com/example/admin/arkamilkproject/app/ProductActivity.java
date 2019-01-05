@@ -3,10 +3,14 @@ package com.example.admin.arkamilkproject.app;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.SearchView;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.animation.AnimationUtils;
 import android.view.animation.LayoutAnimationController;
 import android.widget.Toast;
@@ -119,6 +123,7 @@ public class ProductActivity extends AppCompatActivity {
                                 name=jsonObject.getString("sub_category");
 
                                 list.add(new Model(name));
+
                                 recyclerView.setAdapter(new CustomAdapter(getApplication(),list));
 
                             }
@@ -177,9 +182,10 @@ public class ProductActivity extends AppCompatActivity {
                                 aml=jsonObject.getString("product_quantity");
 
                                 productlist.add(new ModelMilk(aimage,aname,aml,acost));
-                                //adapterMilk=new CustomAdapterMilk(getApplicationContext(),productlist);
+                                adapterMilk=new CustomAdapterMilk(getApplicationContext(),productlist);
 
-                                recyclerView2.setAdapter(new CustomAdapterMilk(getApplication(),productlist));
+                                //recyclerView2.setAdapter(new CustomAdapterMilk(getApplication(),productlist));
+                                recyclerView2.setAdapter(adapterMilk);
 
                             }
 
@@ -211,5 +217,39 @@ public class ProductActivity extends AppCompatActivity {
             }
         };
         rq.add(stringRequest);
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        MenuItem search = menu.findItem(R.id.search);
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(search);
+        search(searchView);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void search(SearchView searchView) {
+
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+
+                if (adapterMilk != null) adapterMilk.getFilter().filter(newText);
+                return true;
+            }
+        });
     }
 }
